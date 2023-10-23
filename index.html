@@ -1,61 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Temperature Converter Website using html, css & JavaScript</title>
-    <!-- css link -->
-    <link rel="stylesheet" href="styles.css" />
 
-    <!-- box icons -->
-    <link rel="stylesheet"
-  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-      <!-- font awesome -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+    <div class="header">
+        <div class="container">
+            <nav>
+                <img src="nav2.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
 
-  </head>
-  <body>
-    <div class="container">
-        <div class="temperature-converter">
-            <div class="mobile">
-                <p class="time">18 October, 2023 12:00 PM</p>
-                <div>
-                    <i class='bx bx-signal-4'></i>
-                    <i class='bx bx-wifi' ></i>
-                    <i class='bx bxs-battery' ></i>
+            <div class="header-text">
+                <p>Front End Developer</p>
+                <h1>Hi, I am Fahaam Khan</h1>
+            </div>
+        </div>
+    </div>
+    ***********************about**************************
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="face.jpg" class="face" alt="">
                 </div>
             </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p class="sub-title1">I am Fahaam Khan, 2nd year student pursuing B.E CSE in Chitkara University,
+                    Punjab. I am a Front <br> End Developer
+                    with complete knowledge of HTML, Css and Js. I have made projects of Front End <br> which
+                    are responsive. I am also passionate about programming in C++ and Java.</p>
 
-            <h1 class="title">Temperature Converter</h1>
+                <div class="tab-titles">
+                    <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links active-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links active-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links active-links" onclick="opentab('project')">Projects</p>
 
-            <div class="result">
-              <span class="result-heading">Result (Celsius)</span>
-              <h2 class="celsius-value" id="celsius"></h2>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Developer</span> <br> Front End Developer <br>HTML,Css & Js</li>
+                        <li><span>Designing</span><br>Web Interfaces</li>
+                        <li><span>Programming</span><br>C++ , Java</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>YHills Edutech Private Limited</span> <br> Attended virtual Internship in DSA from
+                            March 2023 to June 2023</li>
+                        <li><span>Null class Pvt Ltd.</span><br>Attended virtual Internship in Web Development from July
+                            2023 to August 2023</li>
+                        <li><span>Bharat Intern</span><br>Currently at virtual Internship in Web Development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Undergraduation</span> <br> Pursuing B.E CSE in Chitkara University, currently in 2nd
+                            year<br>1st year cgpa- 9.15</li>
+                        <li><span>Senior Secondary with PCM</span><br>passed with 90%</li>
+                        <li><span>Matriculation</span><br>Passed with 98%</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="project">
+                    <ul>
+                        <li><span>1. Google Search Engine</span> <br> Link to open= <a
+                                href="https://googleclonefinal.netlify.app/">Google Search</a></li>
+                        <li><span>2. Netflix Clone</span><br>Link to open:= <a
+                                href="https://netflixclonebi.netlify.app/">Netflix Clone</a></li>
+                        <li><span>More Projects on the way</span><br>Soon to be shared.....</li>
+                    </ul>
+                </div>
             </div>
-
-            <!-- input field -->
-            <div class="degree-type">
-                <!-- for degrees -->
-              <div class="degree-field">
-                <label for="degree">Degrees</label>
-                <input type="number" name="degree" id="degree" />
-              </div>
-
-              <!-- for option selection -->
-              <div class="temp-field">
-                <label for="temp-type">Type</label>
-                <select name="temperatures" id="temp-type" autocomplete="on">
-                  <option id="fahrenheit" value="fahrenheit">Fahrenheit</option>
-                  <option id="kelvin" value="kelvin">Kelvin</option>
-                </select>
-              </div>
-            </div>
-            <button id="convert-btn">Convert</button>
-            
         </div>
-      </div>
-    <!-- script tags -->
-    <script src="app.js"></script>
-  </body>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title2">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Front End Templates</h2>
+                    <p>I have made front end projects and can be able to create the survey forms, any type of templates etc.</p>
+                    <a href="#contact">Learn more</a>
+                </div>
+                <div>
+                    <h2>Designing Web Interfaces<h2>
+                            <p>I am also able to design the front end web interfaces with beautiful backgrounds and templates.</p>
+                            <a href="#contact">Learn more</a>
+                </div>
+                <div>
+                    <h2>Programming</h2>
+                    <p>I am also good in programming languages like C++ and java and currently i am practicing DSA in C++. </p>
+                    <a href="#contact">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    *************************Portfolio************************
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title3">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="1.png">
+                    <div class="layer">
+                        <h3>Responsive Search Engine</h3>
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="2.png">
+                    <div class="layer">
+                        <h3>Responsive Clone</h3>
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="3.png">
+                    <div class="layer">
+                        <h3>Faq works</h3>
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="4.png">
+                    <div class="layer">
+                        <h3>Responsive footer</h3>
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title4">Contact Me</h1>
+                    <p>fahaam98154@gmail.com</p>
+                    <p><a href="#"> +91 6284448162</a></p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="">
+                        <input type="text" name="Name" id="" placeholder="Your Name" required>
+                        <input type="email" name="Your Email" id="" placeholder="Your Email" required>
+                        <textarea name="Message" id="" rows="5" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn1">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- <div class="scroll-container">
+        <img src="c1.png" alt="">
+        <img src="c2.png" alt="">
+        <img src="c3.png" alt="">
+        <img src="c4.png" alt="">
+        <img src="c5.png" alt="">
+        <img src="c6.png" alt="">
+    </div> -->
+    <div class="copyright">
+        <p>Copyright & All rights reserved &copy; 2023 , <span>Designed by Fahaam Khan</span> </p>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-links");
+
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+
+            }
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+
+    </script>
+    
+</body>
+
 </html>
